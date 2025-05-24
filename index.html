@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pujarani Choudhury | Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Pujarani Choudhury</h1>
+    <p>Web Developer | HTML, CSS, JavaScript, Python (basic)</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm an aspiring front-end developer with a passion for creating responsive
+      and user-friendly web interfaces. Skilled in HTML, CSS, JavaScript, and learning Python.
+    </p>
+
+    <button id="timeBtn">Show Current Time</button>
+    <p id="timeDisplay" style="margin-top: 10px; font-weight: bold; color: #333;"></p>
+
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>Personal Portfolio</h3>
+      <p>A responsive personal website built with HTML, CSS, and JavaScript.</p>
+      <a href="https://github.com/yourusername/portfolio" target="_blank">View Code</a>
+    </div>
+
+    <div class="project">
+      <h3>Simple Calculator</h3>
+      <p>A web-based calculator for basic math operations using JavaScript.</p>
+      <a href="https://github.com/yourusername/calculator" target="_blank">View Code</a>
+    </div>
+
+    <div class="project">
+      <h3>Python Quiz App</h3>
+      <p>A command-line quiz application built with Python basics.</p>
+      <a href="https://github.com/yourusername/python-quiz" target="_blank">View Code</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:pujac3010@gmail.com">pujac3010@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/pujarani-choudhury" target="_blank">pujarani-choudhury</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank">yourusername</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Pujarani Choudhury</p>
+  </footer>
+
+  <script>
+  const timeBtn = document.getElementById('timeBtn');
+  const timeDisplay = document.getElementById('timeDisplay');
+
+  timeBtn.addEventListener('click', () => {
+    const now = new Date();
+    const timeString = now.toLocaleTimeString();
+    timeDisplay.textContent = "Current Time: " + timeString;
+  });
+</script>
+
+
+</body>
+
+</html>
