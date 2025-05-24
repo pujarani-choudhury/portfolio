@@ -33,26 +33,33 @@
   </section>
 
   <section id="projects">
-    <h2>Projects</h2>
+  <h2>Projects</h2>
+  <div class="projects-grid">
 
-    <div class="project">
+    <div class="project-card">
       <h3>Personal Portfolio</h3>
-      <p>A responsive personal website built with HTML, CSS, and JavaScript.</p>
-      <a href="https://github.com/yourusername/portfolio" target="_blank">View Code</a>
+      <p>A responsive personal website built with HTML and CSS.</p>
+      <a href="https://pujarani-choudhury.github.io/portfolio" class="btn" target="_blank">🌐 View Live</a>
+      <a href="https://github.com/pujarani-choudhury/portfolio" class="btn" target="_blank">💻 View Code</a>
     </div>
 
-    <div class="project">
+    <div class="project-card">
       <h3>Simple Calculator</h3>
-      <p>A web-based calculator for basic math operations using JavaScript.</p>
-      <a href="https://github.com/yourusername/calculator" target="_blank">View Code</a>
+      <p>A basic calculator built with HTML, CSS, and JavaScript.</p>
+      <a href="#" class="btn" target="_blank">🌐 View Live</a>
+      <a href="https://github.com/pujarani-choudhury/calculator" class="btn" target="_blank">💻 View Code</a>
     </div>
 
-    <div class="project">
+    <div class="project-card">
       <h3>Python Quiz App</h3>
-      <p>A command-line quiz application built with Python basics.</p>
-      <a href="https://github.com/yourusername/python-quiz" target="_blank">View Code</a>
+      <p>A command-line quiz app using Python fundamentals.</p>
+      <a href="#" class="btn" target="_blank">📁 Code Only</a>
+      <a href="https://github.com/pujarani-choudhury/python-quiz" class="btn" target="_blank">💻 View Code</a>
     </div>
-  </section>
+
+  </div>
+</section>
+
 
   <section id="contact">
     <h2>Contact</h2>
@@ -66,15 +73,15 @@
   </footer>
 
   <script>
-  const timeBtn = document.getElementById('timeBtn');
-  const timeDisplay = document.getElementById('timeDisplay');
+    const timeBtn = document.getElementById('timeBtn');
+    const timeDisplay = document.getElementById('timeDisplay');
 
-  timeBtn.addEventListener('click', () => {
-    const now = new Date();
-    const timeString = now.toLocaleTimeString();
-    timeDisplay.textContent = "Current Time: " + timeString;
-  });
-</script>
+    timeBtn.addEventListener('click', () => {
+      const now = new Date();
+      const timeString = now.toLocaleTimeString();
+      timeDisplay.textContent = "Current Time: " + timeString;
+    });
+  </script>
 
 
 </body>
